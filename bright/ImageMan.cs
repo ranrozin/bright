@@ -43,7 +43,7 @@ namespace bright
         }
         public void BandC(int bValue, int cValue)
         {
-            // I believe that the right way to do contrast and brightness together is always to apply
+            //   I believe that the right way to do contrast and brightness together is always to apply
             // brightness first and then contrast.
             this.Reset();
             imFactory.Brightness(bValue);
