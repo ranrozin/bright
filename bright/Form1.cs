@@ -27,7 +27,7 @@ namespace bright
             Log.AddEntry("Done with initilize compnenets");
 
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.TopMost = true;
+            this.TopMost= true;
 
             Log.AddEntry("about to get an EnRoute instance");
 
@@ -56,6 +56,13 @@ namespace bright
 
 
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.TopMost = true;
+            Log.AddEntry("form_load was init");
+        }
+
 
         private void trackBarContrast_MouseUp(Object sender, EventArgs e)
         {
